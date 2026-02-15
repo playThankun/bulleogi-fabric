@@ -1,0 +1,10 @@
+{
+  "item.minecraft.set_air": "Air",
+  "item.minecraft.nether_portal_spawner": "Nether Portal Spawner",
+  "item.minecraft.end_portal_spawner": "End Portal Spawner",
+  "item.minecraft.end_gateway_spawner": "End Gateway Spawner",
+  "item.minecraft.frosted_ice": "Frosted Ice",
+  "item.minecraft.air_bubble_up": "Bubble Column (Up)",
+  "item.minecraft.air_bubble_down": "Bubble Column (Down)",
+  "block.minecraft.bubble_column": "Bubble Column (Block)"
+}

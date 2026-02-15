@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "bulleogi",
+  "version": "1.0.0",
+  "name": "Bulleogi",
+  "description": "modmenu.descriptionTranslation.bulleogi",
+  "authors": [
+    "Thankun"
+  ],
+"contact": {
+    "homepage": "https://github.com/playThankun/bulleogi-fabric/releases",
+    "sources": "https://github.com/playThankun/bulleogi-fabric"
+  },
+  "license": "MIT",
+  "icon": "assets/minecraft/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.thankun.bulleogi.Bulleogi"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.18.4",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}

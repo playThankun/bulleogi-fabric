@@ -1,0 +1,10 @@
+{
+  "item.minecraft.set_air": "Không khí",
+  "item.minecraft.nether_portal_spawner": "Vật tạo Cổng Nether",
+  "item.minecraft.end_portal_spawner": "Vật tạo Cổng End",
+  "item.minecraft.end_gateway_spawner": "Vật tạo Cổng End Gateway",
+  "item.minecraft.frosted_ice": "Băng phủ sương",
+  "item.minecraft.air_bubble_up": "Cột bong bóng (Lên)",
+  "item.minecraft.air_bubble_down": "Cột bong bóng (Xuống)",
+  "block.minecraft.bubble_column": "Cột bong bóng (Đặt)"
+}

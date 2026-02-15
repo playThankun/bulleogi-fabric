@@ -1,0 +1,10 @@
+{
+  "item.minecraft.set_air": "공기",
+  "item.minecraft.nether_portal_spawner": "네더 포탈 생성기",
+  "item.minecraft.end_portal_spawner": "엔드 포탈 생성기",
+  "item.minecraft.end_gateway_spawner": "엔드 게이트웨이 생성기",
+  "item.minecraft.frosted_ice": "살얼음",
+  "item.minecraft.air_bubble_up": "버블 칼럼 (위)",
+  "item.minecraft.air_bubble_down": "버블 칼럼 (아래)",
+  "block.minecraft.bubble_column": "버블 칼럼 (설치용)"
+}

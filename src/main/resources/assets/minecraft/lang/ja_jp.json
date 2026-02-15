@@ -1,0 +1,10 @@
+{
+  "item.minecraft.set_air": "空気",
+  "item.minecraft.nether_portal_spawner": "ネザーポータルスポナー",
+  "item.minecraft.end_portal_spawner": "エンドポータルスポナー",
+  "item.minecraft.end_gateway_spawner": "エンドゲートウェイスポナー",
+  "item.minecraft.frosted_ice": "薄氷",
+  "item.minecraft.air_bubble_up": "バブルカラム (上)",
+  "item.minecraft.air_bubble_down": "バブルカラム (下)",
+  "block.minecraft.bubble_column": "バブルカラム (設置用)"
+}
