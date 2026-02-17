@@ -48,9 +48,11 @@ public class Bulleogi implements ModInitializer {
         MINECRAFT_ITEMS.add(registerMinecraftItem("end_portal_spawner", Blocks.END_PORTAL.getDefaultState()));
         MINECRAFT_ITEMS.add(registerMinecraftItem("end_gateway_spawner", Blocks.END_GATEWAY.getDefaultState()));
         MINECRAFT_ITEMS.add(registerMinecraftItem("frosted_ice", Blocks.FROSTED_ICE.getDefaultState()));
-        
+        MINECRAFT_ITEMS.add(registerMinecraftItem("bubble_column_and_water_up", Blocks.BUBBLE_COLUMN.getDefaultState().with(BubbleColumnBlock.DRAG, false)));
+        MINECRAFT_ITEMS.add(registerMinecraftItem("bubble_column_and_water_down", Blocks.BUBBLE_COLUMN.getDefaultState().with(BubbleColumnBlock.DRAG, true)));
         // 버블 칼럼 등록
-        MINECRAFT_ITEMS.add(registerMinecraftItem("air_bubble_up", AIR_BUBBLE_UP.getDefaultState().with(BubbleColumnBlock.DRAG, false)));
+        Item bubbleIconItem = registerMinecraftItem("air_bubble_up", AIR_BUBBLE_UP.getDefaultState().with(BubbleColumnBlock.DRAG, false));
+        MINECRAFT_ITEMS.add(bubbleIconItem);
         MINECRAFT_ITEMS.add(registerMinecraftItem("air_bubble_down", AIR_BUBBLE_DOWN.getDefaultState().with(BubbleColumnBlock.DRAG, true)));
 
         // 4. [진짜 전용 탭] 모든 아이템 등록 후 여기서 탭을 "불러오기"!
@@ -58,7 +60,7 @@ public class Bulleogi implements ModInitializer {
             Registries.ITEM_GROUP,
             Identifier.of(MOD_ID, "main"),
             FabricItemGroup.builder()
-                .icon(() -> new ItemStack(MINECRAFT_ITEMS.get(5)))
+                .icon(() -> new ItemStack(bubbleIconItem))
                 .displayName(Text.translatable("itemGroup.bulleogi.main")) // 👈 번역 키로 교체!
                 .entries((displayContext, entries) -> {
                     for (Item item : MINECRAFT_ITEMS) {

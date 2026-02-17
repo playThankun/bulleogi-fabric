@@ -7,5 +7,7 @@
   "item.minecraft.air_bubble_up": "Bubble Column (Up)",
   "item.minecraft.air_bubble_down": "Bubble Column (Down)",
   "block.minecraft.bubble_column": "Bubble Column (Placement)",
-  "itemGroup.bulleogi.main": "Loaded Blocks"
+  "itemGroup.bulleogi.main": "Loaded Blocks",
+  "item.minecraft.bubble_column_and_water_up": "Bubble Column and Water (Up)",
+  "item.minecraft.bubble_column_and_water_down": "Bubble Column and Water (Down)"
 }

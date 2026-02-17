@@ -7,5 +7,7 @@
   "item.minecraft.air_bubble_up": "Cột bong bóng (Lên)",
   "item.minecraft.air_bubble_down": "Cột bong bóng (Xuống)",
   "block.minecraft.bubble_column": "Cột bong bóng (Để đặt)",
-  "itemGroup.bulleogi.main": "Khối đã tải"
+  "itemGroup.bulleogi.main": "Khối đã tải",
+  "item.minecraft.bubble_column_and_water_up": "Cột bong bóng và Nước (Lên)",
+  "item.minecraft.bubble_column_and_water_down": "Cột bong bóng và Nước (Xuống)"
 }
