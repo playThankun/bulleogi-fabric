@@ -1,15 +1,17 @@
 package com.thankun.bulleogi;
 
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.block.*;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
+import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
@@ -51,19 +53,31 @@ public class Bulleogi implements ModInitializer {
         MINECRAFT_ITEMS.add(registerMinecraftItem("air_bubble_up", AIR_BUBBLE_UP.getDefaultState().with(BubbleColumnBlock.DRAG, false)));
         MINECRAFT_ITEMS.add(registerMinecraftItem("air_bubble_down", AIR_BUBBLE_DOWN.getDefaultState().with(BubbleColumnBlock.DRAG, true)));
 
-        // 4. [도구 및 유용한 물건] 탭에 아이템들 쑤셔넣기!
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(content -> {
-            for (Item item : MINECRAFT_ITEMS) {
-                content.add(item);
-            }
-        });
+        // 4. [진짜 전용 탭] 모든 아이템 등록 후 여기서 탭을 "불러오기"!
+        Registry.register(
+            Registries.ITEM_GROUP,
+            Identifier.of(MOD_ID, "main"),
+            FabricItemGroup.builder()
+                .icon(() -> new ItemStack(MINECRAFT_ITEMS.get(5)))
+                .displayName(Text.translatable("itemGroup.bulleogi.main")) // 👈 번역 키로 교체!
+                .entries((displayContext, entries) -> {
+                    for (Item item : MINECRAFT_ITEMS) {
+                        entries.add(item);
+                    }
+                })
+                .build()
+        );
     }
 
     private static Item registerMinecraftItem(String path, BlockState state) {
         // 네임페이스 이스 마인크래프트!
         Identifier id = Identifier.of("minecraft", path); 
         RegistryKey<Item> key = RegistryKey.of(RegistryKeys.ITEM, id);
-        Item.Settings settings = new Item.Settings().registryKey(key);
+        
+        // 아이템의 이름도 번역 가능하게 설정합습니돻!
+        Item.Settings settings = new Item.Settings()
+                .registryKey(key)
+                .translationKey("item.minecraft." + path); // 👈 아이템 번역 키 강제 지정!
         
         BlockSetterItem item = new BlockSetterItem(state, settings);
         return Registry.register(Registries.ITEM, key, item);

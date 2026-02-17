@@ -6,5 +6,6 @@
   "item.minecraft.frosted_ice": "살얼음",
   "item.minecraft.air_bubble_up": "버블 칼럼 (위)",
   "item.minecraft.air_bubble_down": "버블 칼럼 (아래)",
-  "block.minecraft.bubble_column": "버블 칼럼 (설치용)"
+  "block.minecraft.bubble_column": "버블 칼럼 (설치용)",
+  "itemGroup.bulleogi.main": "불러온 블럭"
 }

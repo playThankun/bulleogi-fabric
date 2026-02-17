@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
   "id": "bulleogi",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "name": "Bulleogi",
   "description": "modmenu.descriptionTranslation.bulleogi",
   "authors": [
     "Thankun"
   ],
 "contact": {
-    "homepage": "https://github.com/playThankun/bulleogi-fabric/releases",
+    "homepage": "https://modrinth.com/mod/bulleogi",
     "sources": "https://github.com/playThankun/bulleogi-fabric"
   },
   "license": "MIT",

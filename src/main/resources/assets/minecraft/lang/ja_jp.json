@@ -1,10 +1,11 @@
 {
   "item.minecraft.set_air": "空気",
-  "item.minecraft.nether_portal_spawner": "ネザーポータルスポナー",
-  "item.minecraft.end_portal_spawner": "エンドポータルスポナー",
-  "item.minecraft.end_gateway_spawner": "エンドゲートウェイスポナー",
+  "item.minecraft.nether_portal_spawner": "ネザーポータル生成器",
+  "item.minecraft.end_portal_spawner": "エンドポータル生成器",
+  "item.minecraft.end_gateway_spawner": "エンドゲートウェイ生成器",
   "item.minecraft.frosted_ice": "薄氷",
-  "item.minecraft.air_bubble_up": "バブルカラム (上)",
-  "item.minecraft.air_bubble_down": "バブルカラム (下)",
-  "block.minecraft.bubble_column": "バブルカラム (設置用)"
+  "item.minecraft.air_bubble_up": "気泡柱 (上)",
+  "item.minecraft.air_bubble_down": "気泡柱 (下)",
+  "block.minecraft.bubble_column": "気泡柱 (設置用)",
+  "itemGroup.bulleogi.main": "読み込まれたブロック"
 }

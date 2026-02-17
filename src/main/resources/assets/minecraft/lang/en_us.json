@@ -6,5 +6,6 @@
   "item.minecraft.frosted_ice": "Frosted Ice",
   "item.minecraft.air_bubble_up": "Bubble Column (Up)",
   "item.minecraft.air_bubble_down": "Bubble Column (Down)",
-  "block.minecraft.bubble_column": "Bubble Column (Block)"
+  "block.minecraft.bubble_column": "Bubble Column (Placement)",
+  "itemGroup.bulleogi.main": "Loaded Blocks"
 }
