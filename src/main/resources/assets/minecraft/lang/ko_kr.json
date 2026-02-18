@@ -9,5 +9,6 @@
   "block.minecraft.bubble_column": "버블 칼럼 (설치용)",
   "itemGroup.bulleogi.main": "불러온 블럭",
   "item.minecraft.bubble_column_and_water_up": "물과 버블 칼럼 (위)",
-  "item.minecraft.bubble_column_and_water_down": "물과 버블 칼럼 (아래)"
+  "item.minecraft.bubble_column_and_water_down": "물과 버블 칼럼 (아래)",
+  "itemGroup.bulleogi.adds": "추가한 블럭"
 }

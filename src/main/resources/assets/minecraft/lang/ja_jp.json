@@ -9,5 +9,6 @@
   "block.minecraft.bubble_column": "気泡柱 (設置用)",
   "itemGroup.bulleogi.main": "読み込まれたブロック",
   "item.minecraft.bubble_column_and_water_up": "水と気泡柱 (上)",
-  "item.minecraft.bubble_column_and_water_down": "水と気泡柱 (下)"
+  "item.minecraft.bubble_column_and_water_down": "水と気泡柱 (下)",
+  "itemGroup.bulleogi.adds": "追加したブロック"
 }

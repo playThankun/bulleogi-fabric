@@ -9,5 +9,8 @@
   "block.minecraft.bubble_column": "Bubble Column (Placement)",
   "itemGroup.bulleogi.main": "Loaded Blocks",
   "item.minecraft.bubble_column_and_water_up": "Bubble Column and Water (Up)",
-  "item.minecraft.bubble_column_and_water_down": "Bubble Column and Water (Down)"
+  "item.minecraft.bubble_column_and_water_down": "Bubble Column and Water (Down)",
+  "item.minecraft.debug": "debug",
+  "item.minecraft.debug2": "debug2",
+  "itemGroup.bulleogi.adds": "Added Blocks"
 }
