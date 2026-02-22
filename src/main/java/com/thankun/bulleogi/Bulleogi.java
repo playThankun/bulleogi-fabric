@@ -25,8 +25,22 @@ public class Bulleogi implements ModInitializer {
     private static final List<Item> MINECRAFT_ITEMS = new ArrayList<>();
     private static final List<Item> ADDS_ONLY_ITEMS = new ArrayList<>();
 
-    public static final Block AIR_BUBBLE_UP = new AirBubbleColumnBlock(AbstractBlock.Settings.copy(Blocks.BUBBLE_COLUMN).noCollision().nonOpaque().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of("minecraft", "air_bubble_up_block"))));
-    public static final Block AIR_BUBBLE_DOWN = new AirBubbleColumnBlock(AbstractBlock.Settings.copy(Blocks.BUBBLE_COLUMN).noCollision().nonOpaque().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of("minecraft", "air_bubble_down_block"))));
+    public static final Block AIR_BUBBLE_UP = new AirBubbleColumnBlock(AbstractBlock.Settings.copy(Blocks.BUBBLE_COLUMN).noCollision().nonOpaque().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of("minecraft", "air_bubble_up_block")))) {
+    @Override
+    protected void appendProperties(net.minecraft.state.StateManager.Builder<Block, BlockState> builder) {
+        super.appendProperties(builder);
+    }
+    // 생성자에서 기본 상태를 DRAG=false로 0.1초 만에 고정!!!
+    {
+        setDefaultState(this.stateManager.getDefaultState().with(BubbleColumnBlock.DRAG, false));
+    }
+};
+
+public static final Block AIR_BUBBLE_DOWN = new AirBubbleColumnBlock(AbstractBlock.Settings.copy(Blocks.BUBBLE_COLUMN).noCollision().nonOpaque().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of("minecraft", "air_bubble_down_block")))) {
+    {
+        setDefaultState(this.stateManager.getDefaultState().with(BubbleColumnBlock.DRAG, true));
+    }
+};
     public static final Block DEBUG = new Block(AbstractBlock.Settings.copy(Blocks.STRUCTURE_BLOCK).registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of("minecraft", "debug"))));
     public static final Block DEBUG2 = new Block(AbstractBlock.Settings.copy(Blocks.JIGSAW).registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of("minecraft", "debug2"))));
 
